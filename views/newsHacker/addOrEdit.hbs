@@ -1,0 +1,23 @@
+<h3>Insert News</h3>
+
+<form action="/newsHacker" method="POST" autocomplete="off">
+    <input type="hidden" name="_id" value="{{newsHacker._id}}">
+    <div class="form-group">
+        <label>Title</label>
+        <input type="text" class="form-control" name="title" placeholder="title" value="{{newsHacker.title}}">
+    </div>
+    
+    <div class="form-group">
+        <label>Url</label>
+        <input type="text" class="form-control" name="url" placeholder="url" value="{{newsHacker.url}}">
+        
+    </div>
+    <div class="form-group">
+            <label>Text</label>
+            <input type="text" class="form-control" name="text" placeholder="text" value="{{newsHacker.text}}">
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
+        <a class="btn btn-secondary" href="/newsHacker/list"><i class="fa fa-list-alt"></i> View All</a>
+    </div>
+</form>
